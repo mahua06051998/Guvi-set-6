@@ -1,0 +1,8 @@
+N,K = map(int,input().split(" "))
+ls = list(map(int,input().split(" ")))
+ans = ls.count(K)
+if(ans >= 1):
+     print("yes")
+else:
+     print("no")
+

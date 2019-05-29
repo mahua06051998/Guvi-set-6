@@ -1,0 +1,22 @@
+#include<stdio.h> 
+#include<stdlib.h> 
+int main() {
+    char s[1000];
+    gets(s);
+    int alphabet = 0, number = 0;
+    for(int i=0;i<strlen(s); i++){
+
+        // check for alphabets 
+        if (isalpha(s[i]) != 0) 
+            alphabet++; 
+  
+        // check for decimal digits 
+        else if (isdigit(s[i]) != 0) 
+            number++; 
+    } 
+    if(alphabet > 0 && number > 0)
+      printf("%s","Yes");
+    else
+       printf("%s","No");
+
+}
